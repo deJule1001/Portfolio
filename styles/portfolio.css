@@ -26,6 +26,9 @@ h1 {
 h2 {
   font-size: 64px;
 }
+h4 {
+  font-size: 48px;
+}
 p {
   font-weight: normal;
   font-size: 16px;
@@ -117,7 +120,14 @@ nav li.active a {
 }
 footer {
   margin: 60px 0;
-  color: var(--branding-color);
+}
+
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 30px 120px;
+}
+footer .contact-box p {
+  margin: 0;
 }
 footer .email-link {
   text-decoration: none;
@@ -140,6 +150,8 @@ footer .social-links a:hover {
   color: white;
   background: var(--branding-color);
 }
+/* this is for mobile devices see below*/
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -147,7 +159,9 @@ footer .social-links a:hover {
   h2 {
     font-size: 44px;
   }
-
+  h4 {
+    font-size: 26px;
+  }
   .hero {
     padding: 80px 20px;
   }
@@ -158,5 +172,8 @@ footer .social-links a:hover {
   .project-description {
     padding: 0;
     text-align: center;
+  }
+  footer .contact-box {
+    padding: 30px;
   }
 }
